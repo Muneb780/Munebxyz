@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q-Gen — Neon Quote Generator</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#0b0b12" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav-left">
+      <!-- inline SVG neon logo -->
+      <div class="logo" aria-hidden="true">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="21" height="21" rx="4" stroke="currentColor" stroke-width="1.5" />
+          <path d="M7 12h10M7 7h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="brand">Q-Gen</div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#quotes">Quotes</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" title="Toggle light/dark">☾</button>
+    </div>
+  </nav>
+
+  <!-- HERO / QUOTE -->
+  <main id="home">
+    <section id="quotes" class="quote-section">
+      <div class="neon-bg"></div>
+
+      <div class="quote-container glass">
+        <div class="quote-deco">
+          <span class="deco-left">“</span>
+        </div>
+
+        <div class="quote-content">
+          <p id="quote-text" class="quote-text" aria-live="polite">Tap <strong>Generate Quote</strong> to start the neon flow.</p>
+          <p id="quote-author" class="quote-author"></p>
+
+          <div class="controls">
+            <button id="generate-btn" class="btn primary">Generate Quote</button>
+            <button id="change-style-btn" class="btn secondary">Change Style</button>
+            <button id="copy-btn" class="btn ghost" title="Copy quote">Copy</button>
+          </div>
+
+          <div class="small-hint">Tip: Use <kbd>Generate</kbd> then <kbd>Change Style</kbd> for fresh neon looks</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="info">
+      <h2>About</h2>
+      <p>This neon-cyber themed quote generator is built for learning and demoing a GitHub Pages site — typing effect, animated background, and style cycling included.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="info">
+      <h2>Contact</h2>
+      <p>Want changes or custom quotes? Email <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Q-Gen • Built with neon ✨</div>
+    <div class="credits">Made for GitHub Pages demo</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+    </html>
